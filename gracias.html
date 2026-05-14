@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gracias por contactar a NOVAQ. Recibimos tu consulta y te responderemos a la brevedad." />
+  <meta name="theme-color" content="#0A0A0A" />
+  <title>Consulta recibida | NOVAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--black:#0A0A0A;--white:#fff;--gold:#C9A84C;--gold-2:#e4ca72;--gray-light:#F0F0F0;--gray:#888;--line:rgba(201,168,76,.28);--ease:280ms ease;--glow:0 0 36px rgba(201,168,76,.22)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{min-height:100vh;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 50% 0%,rgba(201,168,76,.13),transparent 34%),radial-gradient(circle at 15% 88%,rgba(201,168,76,.08),transparent 32%),var(--black);color:var(--white);display:grid;place-items:center;padding:28px;line-height:1.6;overflow-x:hidden}
+    body:before,body:after{content:'';position:fixed;pointer-events:none;border:1px solid rgba(201,168,76,.28);border-radius:50%;filter:drop-shadow(0 0 16px rgba(201,168,76,.22))}
+    body:before{width:720px;height:720px;top:-420px;right:-280px;border-left-color:transparent;border-bottom-color:transparent}
+    body:after{width:820px;height:820px;bottom:-520px;left:-340px;border-top-color:transparent;border-right-color:transparent}
+    .card{position:relative;z-index:2;width:min(100%,760px);text-align:center;border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.018));box-shadow:0 24px 80px rgba(0,0,0,.42),var(--glow);padding:64px 34px;overflow:hidden}
+    .card:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(201,168,76,.15),transparent 38%);pointer-events:none}
+    .content{position:relative;z-index:2}
+    .brand-logo{width:min(78%,330px);height:auto;margin:0 auto 34px;display:block;filter:drop-shadow(0 0 24px rgba(255,255,255,.08))}
+    .check{width:82px;height:82px;margin:0 auto 28px;border-radius:50%;display:grid;place-items:center;color:var(--gold);border:1px solid rgba(201,168,76,.6);background:radial-gradient(circle at 50% 36%,rgba(201,168,76,.16),rgba(10,10,10,.95) 64%);box-shadow:0 0 0 10px var(--black),var(--glow)}
+    .check svg{width:38px;height:38px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .eyebrow{display:inline-flex;align-items:center;gap:14px;color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:.78rem;font-weight:600;margin-bottom:18px}
+    .eyebrow:before,.eyebrow:after{content:'';width:38px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    h1{font-size:clamp(2.15rem,5vw,4.2rem);line-height:1.08;letter-spacing:-.04em;font-weight:600;margin-bottom:20px}
+    p{max-width:610px;margin:0 auto;color:var(--gray-light);font-size:clamp(1rem,1.5vw,1.12rem)}
+    .actions{margin-top:36px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 24px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform var(--ease),box-shadow var(--ease),background var(--ease),border-color var(--ease);font-weight:500;font-size:.96rem;white-space:nowrap;text-decoration:none;color:inherit}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#090909;box-shadow:0 12px 38px rgba(201,168,76,.24)}
+    .btn-outline{background:rgba(255,255,255,.025);border-color:rgba(201,168,76,.55);color:var(--white)}
+    .note{margin-top:26px;color:var(--gray);font-size:.92rem}
+    @media(max-width:640px){.card{padding:48px 22px}.actions{display:grid}.btn{width:100%}.brand-logo{width:min(82%,280px)}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="content">
+      <img class="brand-logo" src="assets/novaq-logo-gracias.svg" alt="NOVAQ" />
+      <div class="check" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <span class="eyebrow">Consulta recibida</span>
+      <h1>Gracias por contactarte</h1>
+      <p>Recibimos tu consulta correctamente. Te vamos a responder a la brevedad por email o WhatsApp, según los datos que nos dejaste.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+        <a class="btn btn-outline" href="https://wa.me/5493517917623?text=Hola%20NOVAQ!%20Quiero%20hacer%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      </div>
+      <p class="note">Horario de atención: Lun-Vie 9:00 a 19:00 / Sáb 9:00 a 14:00</p>
+    </div>
+  </main>
+</body>
+</html>
